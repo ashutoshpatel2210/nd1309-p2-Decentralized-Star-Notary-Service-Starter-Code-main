@@ -4,14 +4,14 @@
 ### Summary and Token Infomation
 This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.The project is built upon the boiler plate code provided for a Star Notary service utilising the ERC-721 standard. It is deployed on the Rinkeby Ethereum Testnet with the following details:
 
-Token Name: Star Token 
-Token Symbol: STC
-Contract Address: 0x59cDc607cb8B9100a080ED9f474799ED00432924
-EtherScan Location: https://rinkeby.etherscan.io/token/0x59cdc607cb8b9100a080ed9f474799ed00432924?a=0xE8E2352988c97a32FB0405486A29b48cF7942e42
-Transactions: https://rinkeby.etherscan.io/address/0xE8E2352988c97a32FB0405486A29b48cF7942e42
-Node version: v16.13.0
-Truffle version:Truffle v5.5.21 - a development framework for Ethereum
-OpenZeppelin version: 2.3.0
+* Token Name: Star Token 
+* Token Symbol: STC
+* Contract Address: 0x59cDc607cb8B9100a080ED9f474799ED00432924
+* EtherScan Location: https://rinkeby.etherscan.io/token/0x59cdc607cb8b9100a080ed9f474799ed00432924?a=0xE8E2352988c97a32FB0405486A29b48cF7942e42
+* Transactions: https://rinkeby.etherscan.io/address/0xE8E2352988c97a32FB0405486A29b48cF7942e42
+* Node version: v16.13.0
+* Truffle version:Truffle v5.5.21 - a development framework for Ethereum
+* OpenZeppelin version: 2.3.0
 
 #### Rinkby Delpoyment output
 (base) PS F:\Udacity BlockChain\Udacity BlockChain Projects\nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main\nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main> truffle migrate --reset --network rinkeby
@@ -235,39 +235,3 @@ The chain ID above can be fetched by:
 cd app
 node index.js
 ```
-
-## Troubleshoot
-#### Error 1 
-```
-'webpack-dev-server' is not recognized as an internal or external command
-```
-**Solution:**
-- Delete the node_modules folder, the one within the /app folder
-- Execute `npm install` command from the /app folder
-
-After a long install, everything will work just fine!
-
-
-#### Error 2
-```
-ParserError: Source file requires different compiler version. 
-Error: Truffle is currently using solc 0.5.16, but one or more of your contracts specify "pragma solidity >=0.X.X <0.X.X".
-```
-**Solution:** In such a case, ensure the following in `truffle-config.js`:
-```js
-// Configure your compilers  
-compilers: {    
-  solc: {      
-    version: "0.5.16", // <- Use this        
-    // docker: true,
-    // ...
-```
-
-## Raise a PR or report an Issue
-1. Feel free to raise a [Pull Request](https://github.com/udacity/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code/pulls) if you find a bug/scope of improvement in the current repository. 
-
-2. If you have suggestions or facing issues, you can log in issue. 
-
----
-
-Do not use the [Old depreacted zipped starter code](https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c51c4c0_project-5-starter-code/project-5-starter-code.zip)
